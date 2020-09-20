@@ -47,7 +47,7 @@ function Nav() {
       <nav>
         <ul>
           {velogList.map(el => (
-            <li><Button variant="light">{el.title}</Button></li>
+            <li><Button color="info">{el.title}</Button></li>
           ))}
         </ul>
       </nav>
