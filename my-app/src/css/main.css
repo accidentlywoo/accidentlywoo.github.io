@@ -1,0 +1,14 @@
+header {
+    outline: 1px solid aquamarine;
+}
+nav {
+    outline: 1px solid aquamarine;
+}
+footer {
+    outline: 1px solid aquamarine;
+}
+
+section {
+    outline: 1px solid aquamarine;
+    min-height: 400px;
+}

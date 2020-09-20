@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, ButtonToolbar } from 'react-bootstrap';
+import './css/reset.css';
+import './css/main.css';
 // 오또카징
 const velogList = [
   {id: 1, title: "HOME"},
@@ -13,7 +15,7 @@ const velogList = [
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App container-fluid">
       <Header />
       <Nav />
       <section>
@@ -44,7 +46,7 @@ function Header() {
 
 function Nav() { 
   return (
-      <nav>
+      <nav className="navbar">
         <ul>
           {velogList.map(el => (
             <li><Button color="info">{el.title}</Button></li>
