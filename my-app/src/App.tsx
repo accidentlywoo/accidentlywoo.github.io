@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonToolbar } from 'react-bootstrap';
+// import { Button, ButtonToolbar } from 'react-bootstrap';
 import './css/reset.css';
 import './css/main.css';
 // 오또카징
@@ -49,7 +49,7 @@ function Nav() {
       <nav className="navbar">
         <ul>
           {velogList.map(el => (
-            <li><Button color="info">{el.title}</Button></li>
+            <li><button className="btn btn-default">{el.title}</button></li>
           ))}
         </ul>
       </nav>
