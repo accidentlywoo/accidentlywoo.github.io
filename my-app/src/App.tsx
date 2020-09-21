@@ -1,23 +1,19 @@
 import React from 'react';
+import Nav from './component/Nav';
+import Header from './component/Header';
+import Footer from './component/Footer';
+import ToDoList from './component/ToDoList';
 // import { Button, ButtonToolbar } from 'react-bootstrap';
 import './css/reset.css';
 import './css/main.css';
-// 오또카징
-const velogList = [
-  {id: 1, title: "HOME"},
-  {id: 2, title: "JAVA"},
-  {id: 3, title: "SPRING"},
-  {id: 4, title: "JPA"},
-  {id: 5, title: "PYTHON"},
-  {id: 6, title: "JAVASCRIPT"},
-  {id: 7, title: "REACT"},
-];
+
 
 function App() {
   return (
     <div className="App container-fluid">
       <Header />
       <Nav />
+      <ToDoList />
       <section>
         <h2></h2>
         <p>최신글 메인1개</p>
@@ -32,35 +28,6 @@ function App() {
       </section>
       <Footer />
     </div>
-  );
-}
-
-function Header() { 
-  return (
-    <header>
-      <h1>Accidentlywoo.Velog.io</h1>
-      <small>백엔드의 대환장 프론트앤드 개발기</small>
-    </header>
-  );
-}
-
-function Nav() { 
-  return (
-      <nav className="navbar">
-        <ul>
-          {velogList.map(el => (
-            <li><button className="btn btn-default">{el.title}</button></li>
-          ))}
-        </ul>
-      </nav>
-  );
-}
-
-function Footer() { 
-  return (
-    <footer>
-      <span>github: </span><a>https://github.com/accidentlywoo</a>
-    </footer>
   );
 }
 
