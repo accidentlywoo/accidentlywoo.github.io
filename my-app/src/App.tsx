@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from './component/Nav';
 import Header from './component/Header';
 import Footer from './component/Footer';
-import ToDoList from './component/ToDoList';
+import ToDoContainer from './component/toDoList/ToDoContainer';
 // import { Button, ButtonToolbar } from 'react-bootstrap';
 import './css/reset.css';
 import './css/main.css';
@@ -13,7 +13,7 @@ function App() {
     <div className="App container-fluid">
       <Header />
       <Nav />
-      <ToDoList />
+      <ToDoContainer />
       <section>
         <h2></h2>
         <p>최신글 메인1개</p>
