@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoItem from './ToDoItem';
 
-function ToDoList(props){
+const ToDoList = (props) => {
     return (
         <ul>
           {props.todos.map(todo => (

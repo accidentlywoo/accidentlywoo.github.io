@@ -1,5 +1,5 @@
 import React from 'react';
-function Footer() { 
+const Footer = () => { 
     return (
       <footer>
         <span>github: </span><a>https://github.com/accidentlywoo</a>

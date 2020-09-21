@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoList from './ToDoList';
 
-function ToDoContainer(){
+const ToDoContainer = () => {
   const state = {
     todos: [
       {

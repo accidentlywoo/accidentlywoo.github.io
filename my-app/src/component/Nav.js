@@ -10,7 +10,7 @@ const velogList = [
     {id: 7, title: "REACT"},
   ];
 
-function Nav() { 
+const Nav = () => { 
     return (
         <nav className="navbar">
           <ul>
